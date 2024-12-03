@@ -9,7 +9,7 @@ int main(){
     string Name;
     string City ; 
     string Country ;
-    int Age ;
+    unsigned short int Age ;
     float Monthly_Salary ;
     float Yearly_Salary = Monthly_Salary * 12;
     char Gender ;
