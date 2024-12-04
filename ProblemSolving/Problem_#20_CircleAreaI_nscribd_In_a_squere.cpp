@@ -25,7 +25,7 @@ int main()
 
     Area = (PI * (A*A)) / 4;
 
-    cout << "Circle Area Through diametre  = " << Area << endl;
+    cout << "Circle Area   = " << Area << endl;
 
 
 
