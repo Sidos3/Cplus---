@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 
 
-    short int Days , Hours , Minits , seconds;
+    short int Days , Hours , Minuts , seconds;
     float TaskDuration;
 
 
@@ -22,13 +22,13 @@ int main(){
     cin >> Hours;
 
     cout << "Please Enter N° Of Minits" << endl;
-    cin >> Minits;
+    cin >> Minuts;
 
     cout << "Please Enter N° Of seconds" << endl;
     cin >> seconds;
 
 
-    TaskDuration = Days * (24 * 60 * 60) + Hours * (60 * 60) + Minits * (60) + seconds;
+    TaskDuration = Days * (24 * 60 * 60) + Hours * (60 * 60) + Minuts * (60) + seconds;
 
     cout << endl;
 
