@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -23,7 +24,10 @@ int main()
 
     cout << endl;
 
-    Area = (PI * (A*A)) / 4;
+    // Area = (PI * (A*A)) / 4;
+    
+    Area = ceil((PI * pow(A,2)) / 4);
+
 
     cout << "Circle Area   = " << Area << endl;
 
