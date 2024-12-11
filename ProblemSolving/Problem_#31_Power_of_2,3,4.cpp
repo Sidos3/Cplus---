@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -19,9 +20,9 @@ int main(){
 
 
 
-    cout << Number * Number << endl;
-    cout << Number * Number * Number << endl;
-    cout << Number * Number * Number * Number << endl;
+    cout << pow(Number,2) << endl;
+    cout << pow(Number,3)<< endl;
+    cout << pow(Number,4) << endl;
 
 
 
