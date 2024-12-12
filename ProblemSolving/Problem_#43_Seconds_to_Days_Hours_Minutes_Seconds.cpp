@@ -18,8 +18,8 @@ int main(){
     cout << "Please Enter Number Of Seconds" << endl; 
     cin >> TotalSeconds;
 
-    SecondsPerDays = 24 * 60 * 60;
-    SecondsPerHours = 60 * 60 ;
+    SecondsPerDays = (24 * 60 * 60);
+    SecondsPerHours = (60 * 60 );
     SecondsPerMinuts = 60;
 
 
