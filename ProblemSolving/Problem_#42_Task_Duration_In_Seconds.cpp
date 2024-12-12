@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -28,7 +29,7 @@ int main(){
     cin >> seconds;
 
 
-    TaskDuration = Days * (24 * 60 * 60) + Hours * (60 * 60) + Minuts * (60) + seconds;
+    TaskDuration = round(Days * (24 * 60 * 60) + Hours * (60 * 60) + Minuts * (60) + seconds);
 
     cout << endl;
 

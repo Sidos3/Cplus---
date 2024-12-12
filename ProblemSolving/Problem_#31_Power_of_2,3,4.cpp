@@ -20,9 +20,9 @@ int main(){
 
 
 
-    cout << pow(Number,2) << endl;
-    cout << pow(Number,3)<< endl;
-    cout << pow(Number,4) << endl;
+    cout << round(pow(Number,2)) << endl;
+    cout << round(pow(Number,3))<< endl;
+    cout << round(pow(Number,4)) << endl;
 
 
 
