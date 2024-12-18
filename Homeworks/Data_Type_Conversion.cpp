@@ -29,7 +29,9 @@ int main(){
 
 
     //int N4 = N3;     // premiere methode
+
    int N4 = int(N3);    // dexieme methode
+   
    //int N4 = (int)N3;   // troisieme methode
 
 
