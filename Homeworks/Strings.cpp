@@ -34,9 +34,9 @@ int main() {
 
     cout << Str4 << endl;
 
-    int Str5 = stoi(Str2) * stoi(Str3);
+    int Result = stoi(Str2) * stoi(Str3);
 
-    cout << Str2 << " * " << Str3 << " = " << Str5 << endl;
+    cout << Str2 << " * " << Str3 << " = " << Result << endl;
 
     return 0;
 }
