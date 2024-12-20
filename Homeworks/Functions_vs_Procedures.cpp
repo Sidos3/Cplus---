@@ -40,9 +40,9 @@ int mySumeFunction() {
 int main() {
 
 
-    mySomeProcedure();
+    mySumeProcedure();
     cout << "*********************************************************" << endl;
-    cout << mySomeFunction() << endl;
+    cout << mySumeFunction() << endl;
 
 
 
