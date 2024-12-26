@@ -2,35 +2,34 @@
 using namespace std;
 
 
-void SwapNumbers() {
+void SwapNumbers(int &A , int &B) {
 
-     int Number1,Number2,Swap;
+    int Swap = A;
+    A = B;
+    B = Swap;
 
-
-    cout << "Please Enter The First Number" << endl;
-    cin >> Number1;
-
-    cout << "Please Enter The Second Number" << endl;
-    cin >> Number2;
-
-    cout << endl;
-
-    cout << Number1 << endl;
-    cout << Number2 << endl;
-
-    Swap = Number1;
-    Number1 = Number2;
-    Number2 = Swap;
-
-    cout << Number1 << endl;
-    cout << Number2 << endl;
+    cout <<"Inside function " << "A= " << A  << " " << "B= " << B << endl;
+    
 
 }
 
 int main() {
 
-    SwapNumbers();
+    int A,B;
 
+    cout << "Please Enter The First A" << endl;
+    cin >> A;
+
+    cout << "Please Enter The Second B" << endl;
+    cin >> B;
+
+    cout << "Before Swap " << "A= " << A << " " << "B= " << B << endl;
+    
+
+    SwapNumbers(A,B);
+
+    cout << "After Swap " << "A= " << A << " " << "B= " << B << endl;
+    
 
     return 0;
 }
