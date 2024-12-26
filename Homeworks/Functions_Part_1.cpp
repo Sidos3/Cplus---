@@ -37,7 +37,7 @@ void PrintHstars(){
 
     cout << "*"<<"\t"<<"*"<< endl;
     cout << "*"<<"\t"<<"*"<< endl;
-    cout << "*****" << endl;
+    cout << "*********" << endl;
     cout << "*"<<"\t"<<"*"<< endl;
     cout << "*"<<"\t"<<"*"<< endl;
 }
