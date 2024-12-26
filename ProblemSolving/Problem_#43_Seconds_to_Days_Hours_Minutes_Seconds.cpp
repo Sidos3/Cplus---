@@ -2,43 +2,45 @@
 #include <cmath>
 using namespace std;
 
+void SecodstoDaysHoursMinutesSeconds(int TotalSeconds)
+{
+    int SecondsPerDay = (24 * 60 * 60);
+    int SecondsPerHour = (60 * 60 );
+    int SecondsPerMinute = 60;
 
+
+    int   NumberOfDays , NumberOfHours , NumberOfMinutes , NumberOfSeconds;
+
+        // Calculate days
+    NumberOfDays = floor(TotalSeconds / SecondsPerDay);
+    int Remainder = TotalSeconds % SecondsPerDay;
+
+    // Calculate hours
+    NumberOfHours = floor(Remainder / SecondsPerHour);
+    Remainder = Remainder % SecondsPerHour;
+
+    // Calculate minutes
+    NumberOfMinutes = floor(Remainder / SecondsPerMinute);
+
+    // Calculate seconds
+    NumberOfSeconds = Remainder % SecondsPerMinute;
+
+
+    cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds << endl;
+
+}
 
 
 
 int main(){
 
-
-
-
-    short int SecondsPerDays , SecondsPerHours , SecondsPerMinuts , TotalSeconds , NumberOfDays ,NumberOfHours,NumberOfMinuts,NumberOfSeconds;
-    float Remainder;
-
-
+   int TotalSeconds;
+    
     cout << "Please Enter Number Of Seconds" << endl; 
     cin >> TotalSeconds;
 
-    SecondsPerDays = (24 * 60 * 60);
-    SecondsPerHours = (60 * 60 );
-    SecondsPerMinuts = 60;
-
-
-    NumberOfDays = floor(TotalSeconds/SecondsPerDays);
-
-    Remainder = NumberOfDays % SecondsPerDays;
-
-    NumberOfHours = floor(Remainder / SecondsPerHours);
-
-    Remainder = NumberOfHours % SecondsPerHours ;
-
-    NumberOfMinuts  = floor(Remainder / SecondsPerMinuts);
-
-    Remainder = NumberOfMinuts % SecondsPerMinuts;
-
-    NumberOfSeconds = Remainder;
-
-
-    cout << TotalSeconds << ":" << NumberOfHours << ":" << NumberOfMinuts << ":" << NumberOfSeconds << endl;
+   
+    SecodstoDaysHoursMinutesSeconds(TotalSeconds);
 
 
     

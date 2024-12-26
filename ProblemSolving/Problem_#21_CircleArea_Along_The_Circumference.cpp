@@ -3,31 +3,21 @@
 using namespace std;
 
 
+float CircleAreaAlongTheCircumference(float L){
 
+    const float PI = 3.14;
+
+    return floor(pow(L,2) / (4 * PI)) ;
+
+}
 
 int main()
 {
-
-
-    const float PI = 3.14;
     float L;
-    float Area;
-
-
-
-
-    cout << "Enter L" << endl;
-    cin >> L;
-
-    cout << endl;
-
-    // Area = (L*L) / (4 * PI);
-    Area = floor(pow(L,2) / (4 * PI)) ;
-
-
     
-    cout << "Circle Area   = " << Area << endl;
-
+    cin >> L;
+    
+    cout << "Circle Area   = " << CircleAreaAlongTheCircumference(L) << endl;
 
 
     return 0;

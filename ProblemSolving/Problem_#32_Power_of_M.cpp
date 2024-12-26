@@ -2,7 +2,10 @@
 #include <cmath>
 using namespace std;
 
-
+int PowerOfM(int Number,int M)
+{
+    return round(pow(Number,M));
+}
 
 
 
@@ -11,7 +14,7 @@ int main(){
 
 
 
-    short int Number,M;
+    int Number,M;
 
 
     cout << "Please enter the Number" << endl;
@@ -24,7 +27,7 @@ int main(){
     cout << endl;
 
 
-    cout << round(pow(Number,M)) << endl;
+    cout << PowerOfM(Number,M) << endl;
 
 
 

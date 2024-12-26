@@ -4,38 +4,32 @@ using namespace std;
 
 
 
+float CircleAracircleDescribedAroundanArbitraryTriangle(float A, float B, float C) {
+
+    const float PI = 3.14;
+    float P = (A + B + C) / 2;
+
+    return round(PI * pow((A * B * C) / (4 * sqrt(P * (P - A) * (P - B) * (P - C))), 2));
+
+}
+
 
 
 
 int main()
 {
+    float A, B, C;
 
-
-    const float PI = 3.14;
-    float A,B,C,P;
-
-    float Area;
-
-
-
-
-    cout << "Enter A" << endl;
+    cout << "Please Enter A " << endl;
     cin >> A;
 
-    cout << "Enter B" << endl;
+    cout << "Please Enter B " << endl;
     cin >> B;
 
-    cout << "Enter C" << endl;
+    cout << "Please Enter C " << endl;
     cin >> C;
 
-
-    cout << endl;
-
-    P = (A + B + C) /2;
-
-    Area = round( PI * pow((A * B * C) / (4 * sqrt(P * (P - A) * (P - B) * (P - C))), 2));
-
-    cout << "Area = " << Area <<endl;
+    cout << "Area = " << CircleAracircleDescribedAroundanArbitraryTriangle(A, B, C) << endl;
 
     return 0;
 

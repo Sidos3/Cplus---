@@ -4,28 +4,20 @@
 using namespace std;
 
 
+float RectangleArea(float A,float D){
 
+    return A * sqrt(pow(D,2) - pow(A,2));
+
+}
 
 int main(){
-
-    float A;
-    float D;
-    float Area;
-
-
-
-    cout << "Enter A" << endl;
+    
+    float A,D;
+    
     cin >> A;
-
-    cout << "Enter D" << endl;
     cin >> D;
 
-    cout << endl;
-
-
-    Area = A * sqrt(pow(D,2) - pow(A,2));
-
-    cout << "Area = " << Area << endl;
+    cout << "Area = " << RectangleArea(A,D) << endl;
 
 
     return 0;

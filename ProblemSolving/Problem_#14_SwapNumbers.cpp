@@ -2,14 +2,9 @@
 using namespace std;
 
 
+void SwapNumbers() {
 
-
-int main(){
-
-
-    short int Number1;
-    short int Number2;
-    short int Swap;
+     int Number1,Number2,Swap;
 
 
     cout << "Please Enter The First Number" << endl;
@@ -30,9 +25,11 @@ int main(){
     cout << Number1 << endl;
     cout << Number2 << endl;
 
+}
 
+int main() {
 
-
+    SwapNumbers();
 
 
     return 0;

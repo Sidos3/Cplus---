@@ -3,35 +3,24 @@ using namespace std;
 
 
 
-
-
-int main(){
+float CircleAreaInsecribdInAnIsoscelesTriangle(float A,float B){
 
     float const PI = 3.14;
-    float A;
-    float B;
-    float N;    //Nimerateur
-    float D;    //Donimerateur    
-    float Area;
-
-
-
-    cout << "Enter A" << endl;
-    cin >> A;
-
-    cout << "Enter B" << endl;
-    cin >> B;
-
-    cout << endl;
+    float N,D;
 
     N = 2 * A - B;
     D = 2 * A + B;
-    
-    Area =  (PI * (B*B) / 4) * (N/D);
 
-    cout << "Circle Area = " << Area << endl;
+    return (PI * (B*B) / 4) * (N/D);
+}
 
+int main(){
+    float A,B;
 
+    cin >> A;
+    cin >> B;
+
+    cout << "Circle Area = " << CircleAreaInsecribdInAnIsoscelesTriangle(A,B) << endl;
 
 
     return 0;

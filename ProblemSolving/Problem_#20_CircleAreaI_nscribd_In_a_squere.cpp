@@ -3,33 +3,22 @@
 using namespace std;
 
 
+float CircleAreaNscribdInASquere(float A){
 
+    const float PI = 3.14;
+
+    return ceil((PI * pow(A,2)) / 4);
+}
 
 
 
 
 int main()
 {
-
-
-    const float PI = 3.14;
     float A;
-    float Area;
-
-
-
-
-    cout << "Enter A" << endl;
     cin >> A;
 
-    cout << endl;
-
-    // Area = (PI * (A*A)) / 4;
-    
-    Area = ceil((PI * pow(A,2)) / 4);
-
-
-    cout << "Circle Area   = " << Area << endl;
+    cout << "Circle Area   = " << CircleAreaNscribdInASquere(A) << endl;
 
 
 

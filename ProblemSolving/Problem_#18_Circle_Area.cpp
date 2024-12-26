@@ -3,31 +3,18 @@
 using namespace std;
 
 
-
-
-int main(){
-
-
+float CircleArea(float Rayon){
 
     const float PI = 3.14;
-    float R;
-    float Area;
 
+    return ceil(PI * pow(Rayon,2));
 
+}
 
-
-    cout << "Enter Rayon Of The Circle" << endl;
-    cin >> R;
-
-    cout << endl;
-
-
-    Area = ceil(PI * pow(R,2));
-
-
-    cout << "The Area Of The Circle = " << Area << endl;
-
-
+int main(){
+    float Rayon;
+    cin >> Rayon;
+    cout << "The Area Of The Circle = " << CircleArea(Rayon) << endl;
     return 0;
 
     }

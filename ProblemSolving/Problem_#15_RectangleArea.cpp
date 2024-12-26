@@ -1,18 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
+float RectangleArea(float A, float B) {
+    return A * B;
+}
 
 
 
+int main() {
 
-int main(){
-
-
-    float A;
-    float B;
-    float Area;
-
-
+    float A, B;
 
     cout << "Enter A" << endl;
     cin >> A;
@@ -20,13 +18,7 @@ int main(){
     cout << "Enter B" << endl;
     cin >> B;
 
-    cout << endl;
-
-    Area = A * B ;
-
-    cout << "Rectangle Area = " << Area << endl;
-
-
+    cout << "Rectangle Area = " << RectangleArea(A,B) << endl;
 
 
     return 0;
