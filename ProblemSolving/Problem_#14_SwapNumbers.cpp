@@ -8,7 +8,7 @@ void SwapNumbers(int &A , int &B) {
     A = B;
     B = Swap;
 
-    cout <<"Inside function " << "A= " << A  << " " << "B= " << B << endl;
+    cout << "Inside function " << "A= " << A  << " " << "B= " << B << endl;
     
 
 }
