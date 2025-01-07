@@ -12,7 +12,7 @@ int main()
 {
 
     int Num1,Num2;
-    string Operation;
+    char Operation;
 
 
     cout << "Please Enter Number 1" << endl;
@@ -25,27 +25,66 @@ int main()
     cin >> Operation;
 
 
-    if (Operation == "+")
+    // if (Operation == "+")
+    // {
+    //     cout << Num1 + Num2 ;
+    // }
+    // else if (Operation == "-")
+    // {
+    //     cout << Num1 - Num2 ;
+    // }
+    // else if (Operation == "*")
+    // {
+    //     cout << Num1 * Num2;
+    // }
+    // else if (Operation == "/")
+    // {
+    //     cout << Num1 / Num2 ;
+    // }
+    // else
+    // {
+    //     cout << "Try A Nother Way :)";
+    // }
+    
+    switch (Operation)
     {
-        cout << Num1 + Num1 ;
-    }
-    else if (Operation == "-")
-    {
+        
+    case '+':
+        cout << Num1 + Num2 ;
+        break;
+
+    case '-':
         cout << Num1 - Num2 ;
+        break;
+
+    case '*':
+        cout << Num1 * Num2 ;
+        break;
+
+    case '/':
+
+        if(Num2 !=0){
+
+            cout << Num1 / Num2 ;
+
+        }
+
+        else{
+
+            cout << "Divesed by zero not mash";
+
+        }
+
+
+        break;
+
+    default:
+        cout << "Try A Nother Way :-)";
+        break;
+
     }
-    else if (Operation == "*")
-    {
-        cout << Num1 * Num2;
-    }
-    else if (Operation == "/")
-    {
-        cout << Num1 / Num2 ;
-    }
-    else
-    {
-        cout << "Try A Nother Way :)";
-    }
-    
-    
+
+
+
     return 0;
 }
