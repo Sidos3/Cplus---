@@ -2,9 +2,28 @@
 #include <cmath>
 using namespace std;
 
-int PowerOfM(int Number,int M)
+
+
+void PowerOfM(int Number,int M)
 {
-    return round(pow(Number,M));
+
+    int P = 1;
+
+    if (M == 0)
+    {
+        cout << P << endl;
+    }
+    else
+    {
+        for (int i = 1; i <= M; i++)
+    {
+        P = P * Number;
+    }
+
+    cout << P << endl;
+    }
+    
+
 }
 
 
@@ -27,7 +46,7 @@ int main(){
     cout << endl;
 
 
-    cout << PowerOfM(Number,M) << endl;
+    PowerOfM(Number,M) ;
 
 
 
