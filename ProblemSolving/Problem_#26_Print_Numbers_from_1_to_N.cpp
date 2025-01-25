@@ -3,10 +3,17 @@ using namespace std;
 
 void PrintnumberFrom1toN(int Number)
 {
-    for ( int i = 1; i <= Number; i++)
+    // for ( int i = 1; i <= Number; i++)
+    // {
+    //     cout << i << endl;
+    // }
+    int i = 1;
+    while (i <= Number)
     {
         cout << i << endl;
+        i++;
     }
+    
     
 }
 

@@ -4,18 +4,27 @@ using namespace std;
 
 
 
-void PrintSumEvenNumbers(int Number)
+int PrintSumEvenNumbers(int Number)
     
 {
     int Sum = 0;
 
-    for (int i = 0; i <= Number; i=i+2)
-    {
+    // for (int i = 0; i <= Number; i=i+2)
+    // {
 
-            Sum = Sum + i;
+    //         Sum = Sum + i;
             
+    // }
+    
+    int i = 0;
+
+    while (i <= Number)
+    {
+        Sum = Sum + i;
+        i = i+2;
     }
-    cout << Sum << endl;
+    
+    return Sum ;
 
 }
 
@@ -29,7 +38,7 @@ int main()
 
     cout << "***************" << endl;
     
-    PrintSumEvenNumbers(Number);
+    cout << "Sum = " << PrintSumEvenNumbers(Number) << endl;
 
 
     return 0;

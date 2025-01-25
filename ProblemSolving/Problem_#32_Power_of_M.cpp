@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-void PowerOfM(int Number,int M)
+int  PowerOfM(int Number,int M)
 {
 
     int P = 1;
@@ -15,14 +15,20 @@ void PowerOfM(int Number,int M)
     }
     else
     {
-        for (int i = 1; i <= M; i++)
+    
+    //     for (int i = 1; i <= M; i++)
+    // {
+    //     P = P * Number;
+    // }
+    int i = 1;
+    while (i <= M)
     {
         P = P * Number;
+        i++;
     }
+    return P;
 
-    cout << P << endl;
     }
-    
 
 }
 
@@ -46,7 +52,7 @@ int main(){
     cout << endl;
 
 
-    PowerOfM(Number,M) ;
+    cout << PowerOfM(Number,M) << endl;
 
 
 

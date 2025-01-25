@@ -1,11 +1,19 @@
 #include <iostream>
 using namespace std;
 
+
+
 void PrintnumberFromNto1(int Number)
 {
-    for ( int i = Number; i >= 1; i--)
+    // for ( int i = Number; i >= 1; i--)
+    // {
+    //     cout << i << endl;
+    // }
+    int i = Number;
+    while (i >= 1)
     {
         cout << i << endl;
+        i--;
     }
     
 }

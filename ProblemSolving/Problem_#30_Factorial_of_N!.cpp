@@ -4,21 +4,28 @@ using namespace std;
 
 
 
-void PrintFactorialOfNumbers(int Number)
+int PrintFactorialOfNumbers(int Number)
     
 {
-    // int Sum = 0;
+    
     int Factorial = 1;
 
-    for (int i = Number; i >= 1; i--)
+    // for (int i = Number; i >= 1; i--)
+    // {
+
+    //         Factorial = Factorial * i;
+
+    // }
+
+    int i = Number;
+    while (i >= 1)
     {
-
-            Factorial = Factorial * i;
-            // Sum = Sum + Factorial;
-
+        Factorial = Factorial * i;
+        i--;
     }
-    cout << Factorial << endl;
-    // cout << Sum << endl;
+    
+    return Factorial;
+
 
 }
 
@@ -30,9 +37,16 @@ int main()
     cout << "Please Enter a Number" << endl;
     cin >> Number;
 
+    while (Number < 0)
+    {
+        cout << "Wrong Number !" << endl;
+        cout << "The number Must be posetif :-) " << endl;
+        cin >> Number;
+    }
+    
     cout << "***************" << endl;
     
-    PrintFactorialOfNumbers(Number);
+    cout << "Factirial = " << PrintFactorialOfNumbers(Number) << endl;
 
 
     return 0;

@@ -4,18 +4,24 @@ using namespace std;
 
 
 
-void PrintSumOddNumbers(int Number)
+int PrintSumOddNumbers(int Number)
     
 {
     int Sum = 0;
 
-    for (int i = 1; i <= Number; i=i+2)
+    // for (int i = 1; i <= Number; i=i+2)
+    // {
+    //         Sum = Sum + i;
+    // }
+
+    int i = 1;
+    while (i <= Number)
     {
-
-            Sum = Sum + i;
-
+        Sum = Sum + i;
+        i= i+2;
     }
-    cout << Sum << endl;
+    
+    return Sum;
 
 }
 
@@ -29,7 +35,7 @@ int main()
 
     cout << "***************" << endl;
     
-    PrintSumOddNumbers(Number);
+    cout << "Sum = " << PrintSumOddNumbers(Number) << endl;
 
 
     return 0;
