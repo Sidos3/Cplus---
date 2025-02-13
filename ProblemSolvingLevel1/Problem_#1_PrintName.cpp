@@ -3,14 +3,14 @@
 using namespace std;
 
 
-void PrintName(){
+void PrintName(string Name){
 
-    cout << "Sidahmed" << endl;
+    cout << "Your Name is : " << Name << endl;
 }
 
 int main(){
 
-    PrintName(); 
+    PrintName("Sidahmed"); 
 
     return 0;
 }
