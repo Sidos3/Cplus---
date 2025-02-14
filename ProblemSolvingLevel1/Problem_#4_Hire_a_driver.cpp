@@ -25,7 +25,7 @@ StInfo ReadInfo()
 
 bool IsAccepted(StInfo Info)
 {
-    return (Info.Age >= 21 && Info.HasDriverLicence );
+    return (Info.Age > 21 && Info.HasDriverLicence );
 }
 
 void PrintResult(StInfo Info)
