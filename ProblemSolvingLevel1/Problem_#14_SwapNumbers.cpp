@@ -1,7 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void ReadNumbers(int& A,int& B)
+{
 
+    cout << "Please Enter The First A" << endl;
+    cin >> A;
+
+    cout << "Please Enter The Second B" << endl;
+    cin >> B;
+
+}
 void SwapNumbers(int &A , int &B) {
 
     int Swap = A;
@@ -16,20 +25,12 @@ void SwapNumbers(int &A , int &B) {
 int main() {
 
     int A,B;
-
-    cout << "Please Enter The First A" << endl;
-    cin >> A;
-
-    cout << "Please Enter The Second B" << endl;
-    cin >> B;
-
+    ReadNumbers(A,B);
     cout << "Before Swap " << "A= " << A << " " << "B= " << B << endl;
     
-
     SwapNumbers(A,B);
 
     cout << "After Swap " << "A= " << A << " " << "B= " << B << endl;
     
-
     return 0;
 }

@@ -2,23 +2,29 @@
 #include <string>
 using namespace std;
 
-float RectangleArea(float A, float B) {
-    return A * B;
-}
 
-
-
-int main() {
-
-    float A, B;
-
+void ReadNumbers(float& A, float& B)
+{
     cout << "Enter A" << endl;
     cin >> A;
 
     cout << "Enter B" << endl;
     cin >> B;
+}
+float CalculateRectangleArea(float A, float B) {
+    return A * B;
+}
 
-    cout << "Rectangle Area = " << RectangleArea(A,B) << endl;
+void PrintResults(float Area)
+{
+    cout << "Rectangle Area is " << Area << endl;
+}
+
+int main() {
+
+    float A,B;
+    ReadNumbers(A,B);
+    PrintResults(CalculateRectangleArea(A,B));
 
 
     return 0;

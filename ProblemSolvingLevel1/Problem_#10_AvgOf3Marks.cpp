@@ -36,7 +36,7 @@ int main(){
 
     int Mark1,Mark2,Mark3;
     ReadMarks(Mark1,Mark2,Mark3);
-    PrintResults(SumOf3Marks(Mark1,Mark2,Mark3));
+    PrintResults(CalculateAverage(Mark1,Mark2,Mark3));
 
 
 
