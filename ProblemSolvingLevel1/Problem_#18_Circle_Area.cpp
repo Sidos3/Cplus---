@@ -3,18 +3,39 @@
 using namespace std;
 
 
-float CircleArea(float Rayon){
+float ReadRadios ()
+{
 
-    const float PI = 3.14;
+    float R;
 
-    return ceil(PI * pow(Rayon,2));
+    cout << "Please Enter Radios R" << endl;
+    cin >> R;
+
+    return R;
+
 
 }
 
+float CircleArea(float R)
+{
+
+    const float PI = 3.1415926535897932384626433832795;
+
+    float Area = PI * pow(R,2);
+
+    return Area;
+
+}
+
+void PrintResult(float Area)
+{
+    cout << "The circle Area = " << Area << endl;
+}
+
+
 int main(){
-    float Rayon;
-    cin >> Rayon;
-    cout << "The Area Of The Circle = " << CircleArea(Rayon) << endl;
-    return 0;
+
+PrintResult(CircleArea(ReadRadios()));
+return 0;
 
     }

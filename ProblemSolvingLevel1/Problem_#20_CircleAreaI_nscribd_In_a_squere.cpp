@@ -3,24 +3,38 @@
 using namespace std;
 
 
-float CircleAreaNscribdInASquere(float A){
+float ReadSquareSide()
+{
 
-    const float PI = 3.14;
+    float A;
 
-    return ceil((PI * pow(A,2)) / 4);
+    cout << "Please Enter SquareSide A" << endl;
+    cin >> A;
+
+    return A;
+
+
 }
 
 
+float CircleAreaNscribdInASquere(float A){
 
+    const float PI = 3.1415926535897932384626433832795;
+
+    float Area = (PI * pow(A,2)) / 4;
+
+    return Area;
+}
+
+
+void PrintResult(float Area)
+{
+    cout << "Circle Area = " << Area << endl;
+}
 
 int main()
 {
-    float A;
-    cin >> A;
 
-    cout << "Circle Area   = " << CircleAreaNscribdInASquere(A) << endl;
-
-
-
+    PrintResult(CircleAreaNscribdInASquere(ReadSquareSide()));
     return 0;
 }

@@ -3,21 +3,34 @@
 
 using namespace std;
 
+void ReadNumbers(float &A, float &D)
+{ 
 
-float RectangleArea(float A,float D){
+    cout << "Please Enter Number A" << endl;
+    cin >> A;
 
-    return A * sqrt(pow(D,2) - pow(A,2));
+    cout << "Plese Enter Number B" << endl;
+    cin >> D;
 
 }
 
+float RectangleAreaThroughDiagonalSideArea(float A,float D){
+
+    float Area = A * sqrt(pow(D,2) - pow(A,2));
+    return Area;
+}
+void PrintResult(float Area)
+{
+    cout << "The Area = " << Area << endl;
+}
 int main(){
     
     float A,D;
     
-    cin >> A;
-    cin >> D;
+    ReadNumbers(A,D);
 
-    cout << "Area = " << RectangleArea(A,D) << endl;
+    PrintResult(RectangleAreaThroughDiagonalSideArea(A,D));
+   
 
 
     return 0;

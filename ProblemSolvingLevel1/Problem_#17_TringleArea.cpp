@@ -2,37 +2,36 @@
 using namespace std;
 
 
+void ReadNumbers(float &B,float &H)
+{
+
+    cout << "Please Enter Triangle Base B" << endl;
+    cin >> B;
+
+    cout << "Please Enter Triangle Height H" << endl;
+    cin >> H;
+
+}
+
+float TriangleArea(float B, float H)
+{
+    float Area = (B / 2) * H ;
+
+    return Area;
+}
+
+void PrintResult(float Area)
+{
+    cout << "Trinagle Area = " << Area << endl;
+}
 
 
 int main(){
 
 
-    float A;
-    float H;
-    float Area;
-
-
-
-
-    cout << "Enter A" << endl;
-    cin >> A;
-
-    cout << "Enter H" << endl;
-    cin >> H;
-
-    cout << endl;
-
-    Area = (1.0/2) * A * H ;
-
-    cout << "Triangle Area = " << Area << endl;
-
-
-
-
-
-
-
-
+    float B,H;
+    ReadNumbers(B,H);
+    PrintResult(TriangleArea(B,H));
 
 
     return 0;
